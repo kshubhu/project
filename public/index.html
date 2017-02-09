@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+
+    <title>movie booking</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- custom styles -->
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+
+    <!-- ANGULAR CUSTOM -->
+     <script src="js/app.js"></script>
+    <script src="js/controllers/MainCtrl.js"></script>
+    <script src="js/controllers/BookingCtrl.js"></script>
+    <script src="js/controllers/CityCtrl.js"></script>
+  
+    <script src="js/services/NerdService.js"></script>
+      <script src="js/controllers/TheatreCtrl.js"></script>
+      <script src="js/controllers/ShowtimeCtrl.js"></script>
+    <script src="js/controllers/MovieCtrl.js"></script>
+    <script src="js/services/GeekService.js"></script>
+    <script src="js/appRoutes.js"></script>
+   
+</head>
+
+<body ng-app="sampleApp">
+    <div class="container-fluid">
+
+        <!-- HEADER -->
+        <nav class="navbar navbar-default">
+        
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">home</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="/booking">booking</a></li>
+                <li><a href="/movies">movies</a></li>
+                 <li><a href="/city">city</a></li>
+                 <li><a href="/theatre">theatre</a></li>
+                 <li><a href="/showtime">showtime</a></li>
+            </ul>
+            
+        </nav>
+
+        <!-- ANGULAR DYNAMIC CONTENT -->
+        <div ng-view></div>
+
+    </div>
+</body>
+
+</html>
